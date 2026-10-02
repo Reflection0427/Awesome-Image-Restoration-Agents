@@ -1,0 +1,85 @@
+name: Discover Image Restoration Agent Papers
+
+on:
+  schedule:
+    # Every Monday at 02:23 UTC (10:23 Asia/Shanghai).
+    - cron: '23 2 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: image-restoration-agent-paper-discovery
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Install validation dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Search scholarly indexes
+        id: scan
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          PAPER_TRACKER_EMAIL: ${{ vars.PAPER_TRACKER_EMAIL }}
+        run: |
+          python scripts/discover_papers.py
+          cat .paper-tracker/report.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Validate candidate data and formal collection
+        run: |
+          python scripts/extract_figure.py --all --verify-only
+          python scripts/generate_readme.py --check
+          python -m unittest discover -s tests -v
+
+      - name: Upload review report
+        uses: actions/upload-artifact@v7
+        with:
+          name: image-restoration-agent-paper-candidate-report
+          path: .paper-tracker/
+          include-hidden-files: true
+          retention-days: 30
+
+      - name: Create or update candidate pull request
+        id: candidate_pr
+        uses: peter-evans/create-pull-request@v8
+        with:
+          token: ${{ github.token }}
+          branch: automation/image-restoration-agent-candidates
+          delete-branch: false
+          commit-message: "chore: refresh image restoration agent candidates"
+          title: "Review newly discovered image restoration agent papers"
+          body: |
+            The scheduled tracker found or refreshed candidate papers.
+
+            This PR changes only `data/candidates.json`. Before a paper enters the public list, a reviewer must:
+
+            1. verify the paper, venue, URL, and relevance;
+            2. select its section and method name;
+            3. select one original Figure from a pinned official PDF;
+            4. record the PDF hash, page, crop, Figure label, and license when known;
+            5. run `scripts/accept_candidate.py` and all validation commands.
+
+            Nothing in this PR is published to README automatically.
+          labels: |
+            paper-candidates
+            automated
+
+      - name: Report result
+        run: |
+          echo "Candidate count: ${{ steps.scan.outputs.candidate_count }}"
+          echo "Pull request: ${{ steps.candidate_pr.outputs.pull-request-url }}"

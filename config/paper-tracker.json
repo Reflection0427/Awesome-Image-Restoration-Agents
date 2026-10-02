@@ -1,0 +1,17 @@
+{
+  "lookback_days": 90,
+  "max_results_per_query": 30,
+  "max_candidates": 50,
+  "minimum_score": 7,
+  "sources": ["arxiv", "openalex", "crossref"],
+  "queries": [
+    "agentic image restoration",
+    "image restoration agent",
+    "image restoration multimodal agent",
+    "image restoration tool planning",
+    "image restoration reinforcement learning agent",
+    "super resolution agent multimodal",
+    "deraining agent image restoration"
+  ],
+  "ignored_titles": []
+}

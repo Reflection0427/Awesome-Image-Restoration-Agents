@@ -1,0 +1,359 @@
+[
+  {
+    "id": "skillir",
+    "section": "General-Purpose Image Restoration Agents",
+    "year": 2026,
+    "venue": "arXiv 2026",
+    "method": "SkillIR",
+    "title": "SkillIR: Evolving Scene-Aware Skills for Agentic Image Restoration",
+    "paper_url": "https://arxiv.org/abs/2609.21468",
+    "code_url": "",
+    "project_url": "",
+    "figure": {
+      "path": "assets/frameworks/skillir.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2609.21468v1",
+      "source_pdf_sha256": "09be36fd8b76b6ad1bb53dfa0b3d1d172d0c81ff8c839ebdafca6ca16257190f",
+      "figure_label": "Figure 2",
+      "figure_kind": "architecture",
+      "page": 3,
+      "crop_pt": [54.0, 53.0, 558.0, 306.0],
+      "license_url": null
+    }
+  },
+  {
+    "id": "causal-agentir",
+    "section": "General-Purpose Image Restoration Agents",
+    "year": 2026,
+    "venue": "arXiv 2026",
+    "method": "Causal-AgentIR",
+    "title": "Causal-AgentIR: Self-Evolving Causal Memory for Adaptive Image Restoration Agents",
+    "paper_url": "https://arxiv.org/abs/2607.21125",
+    "code_url": "",
+    "project_url": "",
+    "figure": {
+      "path": "assets/frameworks/causal-agentir.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2607.21125v1",
+      "source_pdf_sha256": "d5541021173f75796be82b21e50079db1425fcd26ec4efd0595a6d35e93a9d5c",
+      "figure_label": "Figure 2",
+      "figure_kind": "framework",
+      "page": 4,
+      "crop_pt": [49.0, 54.0, 563.0, 199.0],
+      "license_url": null
+    }
+  },
+  {
+    "id": "sear",
+    "section": "General-Purpose Image Restoration Agents",
+    "year": 2026,
+    "venue": "ECCV 2026",
+    "method": "SEAR",
+    "title": "Self-Evolving Agentic Image Restoration via Deliberate Planning and Intuitive Execution",
+    "paper_url": "https://arxiv.org/abs/2606.28971",
+    "code_url": "",
+    "project_url": "",
+    "figure": {
+      "path": "assets/frameworks/sear.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2606.28971v2",
+      "source_pdf_sha256": "5ed3829db2c75362ba72653db9b6b6f499fa11eab88d5768a718d17a6ebf31f1",
+      "figure_label": "Figure 3",
+      "figure_kind": "framework",
+      "page": 5,
+      "crop_pt": [134.0, 116.0, 481.0, 371.0],
+      "license_url": null
+    }
+  },
+  {
+    "id": "ditto",
+    "section": "General-Purpose Image Restoration Agents",
+    "year": 2026,
+    "venue": "arXiv 2026",
+    "method": "DiTTo",
+    "title": "DiTTo: Scalable Order-aware All-in-One Image Restoration Agent",
+    "paper_url": "https://arxiv.org/abs/2605.30915",
+    "code_url": "",
+    "project_url": "https://cmlab-korea.github.io/DiTTo/",
+    "figure": {
+      "path": "assets/frameworks/ditto.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2605.30915v2",
+      "source_pdf_sha256": "c9d8dccf22175078e3b09de31575e97ddc02cf9972e1fcd80bafc7f950ce64aa",
+      "figure_label": "Figure 2",
+      "figure_kind": "framework",
+      "page": 3,
+      "crop_pt": [107.0, 70.0, 506.0, 474.0],
+      "license_url": null
+    }
+  },
+  {
+    "id": "evoir-agent",
+    "section": "General-Purpose Image Restoration Agents",
+    "year": 2026,
+    "venue": "arXiv 2026",
+    "method": "EvoIR-Agent",
+    "title": "EvoIR-Agent: Self-Evolving Image Restoration Agentic System via Experience-Driven Learning",
+    "paper_url": "https://arxiv.org/abs/2605.22208",
+    "code_url": "https://github.com/rightleft-123/EvoIRAgent",
+    "project_url": "",
+    "figure": {
+      "path": "assets/frameworks/evoir-agent.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2605.22208v3",
+      "source_pdf_sha256": "c3ce98a153eb4ef89be8d491471e9caae7f6453b08959db8851da37ca1da4058",
+      "figure_label": "Figure 2",
+      "figure_kind": "overview",
+      "page": 3,
+      "crop_pt": [327.0, 495.0, 506.0, 723.0],
+      "license_url": null
+    }
+  },
+  {
+    "id": "opera",
+    "section": "General-Purpose Image Restoration Agents",
+    "year": 2026,
+    "venue": "arXiv 2026",
+    "method": "OPERA",
+    "title": "OPERA: An Agent for Image Restoration with End-to-End Joint Planning-Execution Optimization",
+    "paper_url": "https://arxiv.org/abs/2605.22104",
+    "code_url": "https://github.com/xsyshuishui/Opera",
+    "project_url": "",
+    "figure": {
+      "path": "assets/frameworks/opera.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2605.22104v1",
+      "source_pdf_sha256": "e3240ec9266aa3177ac953f5a4461f9dac48a4e897e069e2eb782d31bc211b02",
+      "figure_label": "Figure 2",
+      "figure_kind": "framework",
+      "page": 5,
+      "crop_pt": [107.0, 52.0, 505.0, 235.0],
+      "license_url": null
+    }
+  },
+  {
+    "id": "tir-agent",
+    "section": "General-Purpose Image Restoration Agents",
+    "year": 2026,
+    "venue": "ECCV 2026",
+    "method": "TIR-Agent",
+    "title": "TIR-Agent: Training an Explorative and Efficient Agent for Image Restoration",
+    "paper_url": "https://arxiv.org/abs/2603.27742",
+    "code_url": "",
+    "project_url": "",
+    "figure": {
+      "path": "assets/frameworks/tir-agent.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2603.27742v2",
+      "source_pdf_sha256": "99093678eb9dc0b255e75a4f6d1e62b994c637f4c2181f57b260181f9ecc6e61",
+      "figure_label": "Figure 3",
+      "figure_kind": "pipeline",
+      "page": 6,
+      "crop_pt": [133.0, 115.0, 482.0, 309.0],
+      "license_url": null
+    }
+  },
+  {
+    "id": "paagent",
+    "section": "Domain-Specific Restoration Agents",
+    "year": 2026,
+    "venue": "arXiv 2026",
+    "method": "PaAgent",
+    "title": "PaAgent: Portrait-Aware Image Restoration Agent via Subjective-Objective Reinforcement Learning",
+    "paper_url": "https://arxiv.org/abs/2603.17055",
+    "code_url": "",
+    "project_url": "https://wyjgr.github.io/PaAgent.html",
+    "figure": {
+      "path": "assets/frameworks/paagent.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2603.17055v1",
+      "source_pdf_sha256": "2d46b2ea2c2c29bcbe0d834369446c4737165193c45ac4027a823afaa65f1989",
+      "figure_label": "Figure 3",
+      "figure_kind": "architecture",
+      "page": 3,
+      "crop_pt": [49.0, 55.0, 563.0, 435.0],
+      "license_url": null
+    }
+  },
+  {
+    "id": "derain-agent",
+    "section": "Domain-Specific Restoration Agents",
+    "year": 2026,
+    "venue": "arXiv 2026",
+    "method": "Derain-Agent",
+    "title": "Derain-Agent: A Plug-and-Play Agent Framework for Rainy Image Restoration",
+    "paper_url": "https://arxiv.org/abs/2603.11866",
+    "code_url": "",
+    "project_url": "",
+    "figure": {
+      "path": "assets/frameworks/derain-agent.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2603.11866v1",
+      "source_pdf_sha256": "5e38a83f8108f177c70a97079de9b3a4be5a65221a4b92522704b85e3723afae",
+      "figure_label": "Figure 2",
+      "figure_kind": "framework",
+      "page": 3,
+      "crop_pt": [53.0, 32.0, 559.0, 320.0],
+      "license_url": null
+    }
+  },
+  {
+    "id": "mair",
+    "section": "General-Purpose Image Restoration Agents",
+    "year": 2026,
+    "venue": "IJCV 2026",
+    "method": "MAIR",
+    "title": "Multi-Agent Image Restoration",
+    "paper_url": "https://doi.org/10.1007/s11263-026-02792-5",
+    "code_url": "",
+    "project_url": "",
+    "figure": {
+      "path": "assets/frameworks/mair.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2503.09403v2",
+      "source_pdf_sha256": "7a3b3d1aa4967e445803e07419bba415d990f0368ab2ed1f80f9127a5206a0f4",
+      "figure_label": "Figure 2",
+      "figure_kind": "pipeline",
+      "page": 4,
+      "crop_pt": [58.0, 59.0, 554.0, 312.0],
+      "license_url": null
+    }
+  },
+  {
+    "id": "restore-r1",
+    "section": "General-Purpose Image Restoration Agents",
+    "year": 2025,
+    "venue": "arXiv 2025",
+    "method": "Restore-R1",
+    "title": "Restore-R1: Efficient Image Restoration Agents via Reinforcement Learning with Multimodal LLM Perceptual Feedback",
+    "paper_url": "https://arxiv.org/abs/2512.18599",
+    "code_url": "",
+    "project_url": "",
+    "figure": {
+      "path": "assets/frameworks/restore-r1.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2512.18599v2",
+      "source_pdf_sha256": "b89d10042701bb3195cbfc8a7ef05ad6a65dde9b7836bbd405dd19eae2aa952e",
+      "figure_label": "Figure 2",
+      "figure_kind": "framework",
+      "page": 3,
+      "crop_pt": [58.0, 54.0, 554.0, 267.0],
+      "license_url": null
+    }
+  },
+  {
+    "id": "4kagent",
+    "section": "Domain-Specific Restoration Agents",
+    "year": 2025,
+    "venue": "NeurIPS 2025",
+    "method": "4KAgent",
+    "title": "4KAgent: Agentic Any Image to 4K Super-Resolution",
+    "paper_url": "https://arxiv.org/abs/2507.07105",
+    "code_url": "",
+    "project_url": "https://4kagent.github.io",
+    "figure": {
+      "path": "assets/frameworks/4kagent.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2507.07105v1",
+      "source_pdf_sha256": "b7b24f4be08f92105e15b2ecf388ecd58c426018cfb4b072045d8107fbc2f304",
+      "figure_label": "Figure 2",
+      "figure_kind": "overview",
+      "page": 5,
+      "crop_pt": [108.0, 20.0, 505.0, 325.0],
+      "license_url": null
+    }
+  },
+  {
+    "id": "q-agent",
+    "section": "General-Purpose Image Restoration Agents",
+    "year": 2025,
+    "venue": "arXiv 2025",
+    "method": "Q-Agent",
+    "title": "Q-Agent: Quality-Driven Chain-of-Thought Image Restoration Agent through Robust Multimodal Large Language Model",
+    "paper_url": "https://arxiv.org/abs/2504.07148",
+    "code_url": "",
+    "project_url": "",
+    "figure": {
+      "path": "assets/frameworks/q-agent.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2504.07148v2",
+      "source_pdf_sha256": "0097b39cdb97a4009b6723990c0ce2cc0c25d8e7c047967ae9a4971a233597e0",
+      "figure_label": "Figure 3",
+      "figure_kind": "framework",
+      "page": 4,
+      "crop_pt": [48.0, 50.0, 564.0, 409.0],
+      "license_url": null
+    }
+  },
+  {
+    "id": "jarvisir",
+    "section": "Domain-Specific Restoration Agents",
+    "year": 2025,
+    "venue": "CVPR 2025",
+    "method": "JarvisIR",
+    "title": "JarvisIR: Elevating Autonomous Driving Perception with Intelligent Image Restoration",
+    "paper_url": "https://arxiv.org/abs/2504.04158",
+    "code_url": "",
+    "project_url": "https://cvpr2025-jarvisir.github.io/",
+    "figure": {
+      "path": "assets/frameworks/jarvisir.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2504.04158v1",
+      "source_pdf_sha256": "b29db76d1fc637d56c020c4079c3a8e5aee6f86b1de322ad486a77e5bffd9dab",
+      "figure_label": "Figure 4",
+      "figure_kind": "pipeline",
+      "page": 4,
+      "crop_pt": [317.0, 53.0, 554.0, 280.0],
+      "license_url": null
+    }
+  },
+  {
+    "id": "hybridagent",
+    "section": "General-Purpose Image Restoration Agents",
+    "year": 2025,
+    "venue": "arXiv 2025",
+    "method": "HybridAgent",
+    "title": "Hybrid Agents for Image Restoration",
+    "paper_url": "https://arxiv.org/abs/2503.10120",
+    "code_url": "",
+    "project_url": "",
+    "figure": {
+      "path": "assets/frameworks/hybridagent.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2503.10120v1",
+      "source_pdf_sha256": "9c7cd97c5fce1e7807af0cb784e459e1224aafc6f6d5ad36e279ae5c56deb8bd",
+      "figure_label": "Figure 2",
+      "figure_kind": "pipeline",
+      "page": 3,
+      "crop_pt": [58.0, 55.0, 554.0, 271.0],
+      "license_url": null
+    }
+  },
+  {
+    "id": "agenticir",
+    "section": "General-Purpose Image Restoration Agents",
+    "year": 2025,
+    "venue": "ICLR 2025",
+    "method": "AgenticIR",
+    "title": "An Intelligent Agentic System for Complex Image Restoration Problems",
+    "paper_url": "https://arxiv.org/abs/2410.17809",
+    "code_url": "https://github.com/Kaiwen-Zhu/AgenticIR",
+    "project_url": "",
+    "figure": {
+      "path": "assets/frameworks/agenticir.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2410.17809v2",
+      "source_pdf_sha256": "b9008f8c7d3d5648e3c26e692d1919868726be492a26d21a1586c194b3bd8c94",
+      "figure_label": "Figure 2",
+      "figure_kind": "framework",
+      "page": 4,
+      "crop_pt": [108.0, 80.0, 504.0, 330.0],
+      "license_url": null
+    }
+  },
+  {
+    "id": "restoreagent",
+    "section": "General-Purpose Image Restoration Agents",
+    "year": 2024,
+    "venue": "NeurIPS 2024",
+    "method": "RestoreAgent",
+    "title": "RestoreAgent: Autonomous Image Restoration Agent via Multimodal Large Language Models",
+    "paper_url": "https://arxiv.org/abs/2407.18035",
+    "code_url": "",
+    "project_url": "https://haoyuchen.com/RestoreAgent",
+    "figure": {
+      "path": "assets/frameworks/restoreagent.png",
+      "source_pdf_url": "https://arxiv.org/pdf/2407.18035v1",
+      "source_pdf_sha256": "f865e7c21f403cae9793cbabd632708b2c16b66f090ab044c7456a3c43a63874",
+      "figure_label": "Figure 3",
+      "figure_kind": "pipeline",
+      "page": 7,
+      "crop_pt": [108.0, 72.0, 506.0, 335.0],
+      "license_url": null
+    }
+  }
+]
