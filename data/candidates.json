@@ -1,1 +1,184 @@
-[]
+[
+  {
+    "title": "Agentic Image Restoration Links Closed-Loop Controllers with Protocol-Aware Evaluation",
+    "paper_url": "https://doi.org/10.20944/preprints202609.1256.v1",
+    "published": "2026-09-15",
+    "authors": [
+      "Yuezhe Yang",
+      "Chengru Li",
+      "Zhuodong Chai",
+      "Xingbo Dong",
+      "Zhe Jin"
+    ],
+    "abstract": "Image restoration is shifting from fixed inference pipelines towards systems that diagnose degradation, choose tools, assess intermediate results, and revise their actions. However, the term “agentic” currently spans architectures with different control mechanisms and evaluation assumptions. We review representative studies published from 2018 to 2026 and offer a controller-centred synthesis of agentic image restoration (AIR). Our perspective separates four functional components, perception, decision, action, and reflection or memory, from five controller families: reinforcement learning, prompt conditioning, multimodal large language model tool use, memory-augmented planning, and multi-agent coordination. Evidence from photography, autonomous driving, medical reconstruction, remote sensing, and microscopy shows that controller comparisons are often confounded by incompatible degradations, tool pools, feedback signals, and budgets. We therefore pair the taxonomy with protocol-aware reporting priorities for output quality, downstream utility, execution cost, failure recovery, and provenance. This framework clarifies the boundary between conditioned restoration and autonomous control, identifies unresolved evaluation gaps, and provides a practical map for developing reliable and auditable AIR systems.",
+    "venue": "",
+    "doi": "10.20944/preprints202609.1256.v1",
+    "arxiv_id": "",
+    "sources": [
+      "Crossref"
+    ],
+    "score": 13,
+    "reasons": [
+      "image-restoration evidence",
+      "agentic planning, tool-use, learning, or memory evidence",
+      "multimodal/language-model evidence"
+    ],
+    "suggested_section": "Domain-Specific Restoration Agents",
+    "status": "needs-review"
+  },
+  {
+    "title": "Agentic AI-powered flexible fiber-bundle endoscopy for high-resolution NIR-II fluorescence imaging in vivo",
+    "paper_url": "https://arxiv.org/abs/2608.08402",
+    "published": "2026-08-09",
+    "authors": [
+      "Yanzhao Shi",
+      "Yuanhua Liu",
+      "Sixin Xu",
+      "Wayne Jason Li",
+      "Yuyuan Chen",
+      "Danyang Xu",
+      "Zhisheng Wu",
+      "Hanze Yu",
+      "Ian Yu-Hong Wong",
+      "Simon Ying-Kit Law",
+      "Hongjie Dai",
+      "Liangqiong Qu",
+      "Feifei Wang"
+    ],
+    "abstract": "Fiber-bundle endoscopy offers a compact and flexible route for clinical fluorescence imaging through natural human orifices, but since its first report in the 1950s, it has remained limited by low spatial resolution, honeycomb artifacts, and inter-core crosstalk. The crosstalk becomes more pronounced at near-infrared-II wavelengths (NIR-II, 1000-3000 nm), a spectral window that offers superior contrast, resolution, and tissue penetration depth for biomedical imaging. Here, we present an AI-powered flexible endoscopy platform that overcomes these constraints through optical-computational co-design: optimizing ultrathin fiber bundles to mitigate crosstalk-induced image blur and enable high-fidelity image transmission across the visible-to-NIR-II spectral range, and developing an Agent-Guided Mixture-of-Experts (GAME) pipeline for honeycomb-artifact removal and image restoration. GAME provides a single restoration entry point for diverse biomedical images acquired with our endoscope, spanning cell, mouse and human samples. It dynamically routes each input to suitable restoration experts via a vision-language model, facilitating image reconstruction with a fourfold resolution improvement beyond the NyquistShannon sampling limit. The utility of our endoscope is demonstrated through in vivo NIR-II imaging of anatomical structures in mice, as well as imaging of the digital micromirror device (DMD)-projected human gastric tube and lymphatic system, paving the way for future clinical translation.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2608.08402",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 11,
+    "reasons": [
+      "image-restoration evidence",
+      "agentic planning, tool-use, learning, or memory evidence",
+      "multimodal/language-model evidence"
+    ],
+    "suggested_section": "General-Purpose Image Restoration Agents",
+    "status": "needs-review"
+  },
+  {
+    "title": "BethAgent: A Contract-Governed Multi-Agent Framework for Verified Cytology Super-Resolution with Safe Rollback",
+    "paper_url": "https://doi.org/10.1145/3770855.3817878",
+    "published": "2026-08-08",
+    "authors": [
+      "Wenzhe Chang",
+      "Jun Yin",
+      "Peilin Li"
+    ],
+    "abstract": "",
+    "venue": "Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining V.2",
+    "doi": "10.1145/3770855.3817878",
+    "arxiv_id": "",
+    "sources": [
+      "Crossref"
+    ],
+    "score": 11,
+    "reasons": [
+      "image-restoration evidence",
+      "agentic planning, tool-use, learning, or memory evidence"
+    ],
+    "suggested_section": "Domain-Specific Restoration Agents",
+    "status": "needs-review"
+  },
+  {
+    "title": "Hierarchical Reinforcement Learning-Based Adaptive Denoising and Reversible Color Restoration Method for Complex Degraded Murals",
+    "paper_url": "https://doi.org/10.21203/rs.3.rs-10694208/v1",
+    "published": "2026-09-01",
+    "authors": [
+      "Minjie Xu"
+    ],
+    "abstract": "Abstract To address the coexistence of noise, cracks, fading, stains, texture weakening, and spatially heterogeneous degradation in complex mural images, this paper proposes a hierarchical reinforcement learning-based adaptive denoising and reversible color restoration method. The proposed framework decomposes mural restoration into two coordinated decision levels: a high-level policy selects the target region and restoration priority, while a low-level policy adaptively determines denoising, color mapping, and detail-preserving operations. A reversible feature constraint is further introduced to control color transformation and reduce the risk of irreversible chromatic deviation. Experiments were conducted using more than 80,000 WikiArt images for artistic-feature pretraining, 9,000 augmented faded mural images, 2,400 synthetically degraded samples, and 1,800 cross-domain evaluation images. The proposed HRL-RRN achieved 22.636 dB PSNR and 0.8628 SSIM, with a PSNR gain of 9.658 dB over the degraded input. Compared with the strongest non-hierarchical reversible baseline, the proposed method improved PSNR by 1.626 dB and SSIM by 0.0979, while reducing the mean color error from 9.376 to 6.487. These results demonstrate that the method can effectively balance noise suppression, structural fidelity, conservative color recovery, and controllable digital restoration.",
+    "venue": "",
+    "doi": "10.21203/rs.3.rs-10694208/v1",
+    "arxiv_id": "",
+    "sources": [
+      "Crossref"
+    ],
+    "score": 11,
+    "reasons": [
+      "image-restoration evidence",
+      "agentic planning, tool-use, learning, or memory evidence"
+    ],
+    "suggested_section": "General-Purpose Image Restoration Agents",
+    "status": "needs-review"
+  },
+  {
+    "title": "HarnessIR: Harnessing Multimodal Foundation Models for Universal Real-World Image Restoration",
+    "paper_url": "https://arxiv.org/abs/2610.10133",
+    "published": "2026-10-07",
+    "authors": [
+      "Xiangtao Kong",
+      "Shuaizheng Liu",
+      "Rongyuan Wu",
+      "Lingchen Sun",
+      "Zhengqiang Zhang",
+      "Jinxin Zhao",
+      "Yuhui Wu",
+      "Lei Zhang"
+    ],
+    "abstract": "Real-world low-quality images suffer from complex mixed degradations, including but not limited to noise, blur, atmospheric effects, etc. Recent agentic methods usually model real-world image restoration (Real-IR) as a sequential tool calling problem over task-specific single-degradation restoration models. This paradigm, however, is fundamentally limited because complex real-world degradations cannot be cleanly undone degradation by degradation, and the tool used for task-specific models caps the capability of the agent system. In this work, we present HarnessIR, an agentic framework for Real-IR by harnessing a multimodal foundation model (MFM) as the executor. HarnessIR consists of five stages: perception and diagnosis, on-demand tool invocation, prompt composition, execution, and verification-driven refinement. Unlike prior agentic Real-IR methods that rely on tool chains assembled from task-specific models, HarnessIR feeds the restoration requirements, the perceptual diagnosis, and the evidence into an MFM that performs restoration in a single pass, followed by verification stages to determine whether the result warrants further processing. Under our harness, off-the-shelf MFMs handle restoration tasks remarkably well, achieving state-of-the-art results on the widely used MiO100 synthetic benchmark. More importantly, by exploiting the strong generalization ability of MFMs, HarnessIR delivers compelling restoration quality on challenging real-world scenes where previous agentic IR systems often struggle. Codes is available at https://github.com/PolyU-VCLab/HarnessIR.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2610.10133",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 9,
+    "reasons": [
+      "image-restoration evidence",
+      "agentic planning, tool-use, learning, or memory evidence"
+    ],
+    "suggested_section": "General-Purpose Image Restoration Agents",
+    "status": "needs-review"
+  },
+  {
+    "title": "Modeling and Optimization of Power Grid Intelligent Restoration Strategy Combining Diffusion Models and Reinforcement Learning",
+    "paper_url": "https://doi.org/10.7716/aem.v15i3.3574",
+    "published": "2026-08-13",
+    "authors": [
+      "J. Li"
+    ],
+    "abstract": "With the increasing proportion of renewable energy integration in modern power systems, grid fault recovery faces greater complexity and uncertainty, posing significant challenges for intelligent energy transmission infrastructures and reliable operation in electromagnetic power networks. To address these issues, this paper proposes a collaborative decision-making model (CDM-RL) that combines diffusion models (DM) and reinforcement learning (RL) for intelligent power grid restoration. The proposed framework generates physically feasible fault scenarios through a denoising diffusion probabilistic model (DDPM) and integrates graph neural networks (GNN) with proximal policy optimization (PPO) to achieve efficient restoration control under complex operating conditions. An alternating training mechanism is further introduced to enhance the generalization capability of the model across diverse fault scenarios. Experimental evaluation on the IEEE 33-bus system demonstrates that CDM-RL significantly outperforms conventional approaches, achieving an initial power restoration time of 8.9 s, a load recovery rate of 93.1%, and an average of only 3.9 switching operations while maintaining superior cross-scenario stability of 85.3%. The proposed AI-driven framework improves grid self-healing capability and provides an effective technical pathway for enhancing the resilience and operational reliability of intelligent electromagnetic energy transmission and distribution systems.",
+    "venue": "Advanced Electromagnetics",
+    "doi": "10.7716/aem.v15i3.3574",
+    "arxiv_id": "",
+    "sources": [
+      "Crossref"
+    ],
+    "score": 9,
+    "reasons": [
+      "image-restoration evidence",
+      "agentic planning, tool-use, learning, or memory evidence"
+    ],
+    "suggested_section": "General-Purpose Image Restoration Agents",
+    "status": "needs-review"
+  },
+  {
+    "title": "RAPIDMap: Rapid Multi-Agent Pipeline for Interpretable Disaster Mapping from Satellite and Street-view Imagery",
+    "paper_url": "https://arxiv.org/abs/2609.00046",
+    "published": "2026-08-30",
+    "authors": [
+      "Yifan Yang",
+      "Lei Zou"
+    ],
+    "abstract": "Rapid and reliable disaster mapping of impacted areas, damaged infrastructure, and affected populations is essential for emergency response and recovery. However, existing AI-based approaches often require extensive manual annotation, lack cross-hazard generalization, and rely on single-modal observations. To address these challenges, this paper proposes RAPIDMap, a rapid multi-agent pipeline for zero-shot interpretable disaster mapping from satellite and street-view imagery. The framework integrates four intelligent agents: Disaster Perception Agent (DPA), Image Restoration Agent (IRA), Damage Recognition Agent (DRA), and Disaster Mapping Agent (DMA). By combining remote sensing and street-view data, RAPIDMap eliminates the need for manual fine-tuning, generalizes across multiple disaster categories, and generates structured, map-ready disaster intelligence with recovery recommendations.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2609.00046",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 9,
+    "reasons": [
+      "image-restoration evidence",
+      "agentic planning, tool-use, learning, or memory evidence"
+    ],
+    "suggested_section": "General-Purpose Image Restoration Agents",
+    "status": "needs-review"
+  }
+]
