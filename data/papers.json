@@ -70,7 +70,7 @@
     "method": "DiTTo",
     "title": "DiTTo: Scalable Order-aware All-in-One Image Restoration Agent",
     "paper_url": "https://arxiv.org/abs/2605.30915",
-    "code_url": "",
+    "code_url": "https://github.com/CMLab-Korea/DiTTo-arxiv",
     "project_url": "https://cmlab-korea.github.io/DiTTo/",
     "figure": {
       "path": "assets/frameworks/ditto.png",
