@@ -154,7 +154,7 @@
     "method": "PaAgent",
     "title": "PaAgent: Portrait-Aware Image Restoration Agent via Subjective-Objective Reinforcement Learning",
     "paper_url": "https://arxiv.org/abs/2603.17055",
-    "code_url": "",
+    "code_url": "https://github.com/WYJGR/PaAgent",
     "project_url": "https://wyjgr.github.io/PaAgent.html",
     "figure": {
       "path": "assets/frameworks/paagent.png",
