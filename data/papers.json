@@ -238,7 +238,7 @@
     "method": "4KAgent",
     "title": "4KAgent: Agentic Any Image to 4K Super-Resolution",
     "paper_url": "https://arxiv.org/abs/2507.07105",
-    "code_url": "",
+    "code_url": "https://github.com/taco-group/4KAgent",
     "project_url": "https://4kagent.github.io",
     "figure": {
       "path": "assets/frameworks/4kagent.png",
