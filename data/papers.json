@@ -280,7 +280,7 @@
     "method": "JarvisIR",
     "title": "JarvisIR: Elevating Autonomous Driving Perception with Intelligent Image Restoration",
     "paper_url": "https://arxiv.org/abs/2504.04158",
-    "code_url": "",
+    "code_url": "https://github.com/LYL1015/JarvisIR",
     "project_url": "https://cvpr2025-jarvisir.github.io/",
     "figure": {
       "path": "assets/frameworks/jarvisir.png",
