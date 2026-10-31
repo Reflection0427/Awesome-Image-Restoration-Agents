@@ -296,11 +296,11 @@
   {
     "id": "hybridagent",
     "section": "General-Purpose Image Restoration Agents",
-    "year": 2025,
-    "venue": "arXiv 2025",
+    "year": 2026,
+    "venue": "CVPR 2026",
     "method": "HybridAgent",
     "title": "Hybrid Agents for Image Restoration",
-    "paper_url": "https://arxiv.org/abs/2503.10120",
+    "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Li_Hybrid_Agents_for_Image_Restoration_CVPR_2026_paper.html",
     "code_url": "",
     "project_url": "",
     "figure": {
