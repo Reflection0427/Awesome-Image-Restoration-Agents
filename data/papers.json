@@ -212,11 +212,11 @@
   {
     "id": "restore-r1",
     "section": "General-Purpose Image Restoration Agents",
-    "year": 2025,
-    "venue": "arXiv 2025",
+    "year": 2026,
+    "venue": "CVPR 2026 Findings",
     "method": "Restore-R1",
     "title": "Restore-R1: Efficient Image Restoration Agents via Reinforcement Learning with Multimodal LLM Perceptual Feedback",
-    "paper_url": "https://arxiv.org/abs/2512.18599",
+    "paper_url": "https://openaccess.thecvf.com/content/CVPR2026F/html/Lu_Restore-R1_Efficient_Image_Restoration_Agents_via_Reinforcement_Learning_with_Multimodal_CVPRF_2026_paper.html",
     "code_url": "",
     "project_url": "",
     "figure": {
