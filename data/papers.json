@@ -342,7 +342,7 @@
     "venue": "NeurIPS 2024",
     "method": "RestoreAgent",
     "title": "RestoreAgent: Autonomous Image Restoration Agent via Multimodal Large Language Models",
-    "paper_url": "https://arxiv.org/abs/2407.18035",
+    "paper_url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/c78f639424b8d89ceb4f2efbb4dfe4f4-Abstract.html",
     "code_url": "",
     "project_url": "https://haoyuchen.com/RestoreAgent",
     "figure": {
