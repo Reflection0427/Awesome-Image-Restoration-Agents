@@ -42,12 +42,15 @@ class CollectionTests(unittest.TestCase):
                 self.assertTrue(paper["method"])
                 self.assertTrue(paper["paper_url"].startswith("https://"))
                 self.assertGreaterEqual(paper["year"], 2020)
+                self.assertLessEqual(paper["year"], 2100)
                 figure = paper["figure"]
                 self.assertEqual(figure["path"], f"assets/frameworks/{paper['id']}.png")
                 self.assertIn(figure["figure_kind"], generate_readme.FIGURE_KINDS)
                 self.assertRegex(figure["figure_label"], r"^Figure [A-Za-z0-9.-]+$")
                 self.assertGreaterEqual(figure["page"], 1)
                 self.assertEqual(len(figure["crop_pt"]), 4)
+                self.assertLess(figure["crop_pt"][0], figure["crop_pt"][2])
+                self.assertLess(figure["crop_pt"][1], figure["crop_pt"][3])
                 self.assertRegex(figure["source_pdf_sha256"], r"^[0-9a-f]{64}$")
                 source = urlparse(figure["source_pdf_url"])
                 self.assertEqual(source.scheme, "https")
@@ -58,6 +61,7 @@ class CollectionTests(unittest.TestCase):
         actual = set((ROOT / "assets" / "frameworks").glob("*.png"))
         self.assertEqual(actual, expected)
         self.assertEqual(len(actual), 17)
+        self.assertEqual(list((ROOT / "assets" / "frameworks").glob("*.svg")), [])
         for path in sorted(actual):
             with self.subTest(image=path.name):
                 extract_figure.validate_image(path)
@@ -82,7 +86,10 @@ class CollectionTests(unittest.TestCase):
         titles = []
         for candidate in candidates:
             self.assertEqual(candidate["status"], "needs-review")
+            self.assertTrue(candidate["paper_url"].startswith("https://"))
+            self.assertGreaterEqual(candidate["score"], 0)
             self.assertIn(candidate["suggested_section"], generate_readme.SECTION_ORDER)
+            self.assertNotIn("figure", candidate)
             titles.append(discover_papers.normalize_title(candidate["title"]))
         self.assertEqual(len(titles), len(set(titles)))
 
