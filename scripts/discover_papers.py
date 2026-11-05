@@ -260,7 +260,14 @@ def existing_candidates() -> list[Candidate]:
 
 def is_listed(candidate: Candidate, papers: list[dict]) -> bool:
     for paper in papers:
-        listed = Candidate(title=paper["title"], paper_url=paper["paper_url"], doi=paper.get("doi", ""), arxiv_id=normalize_arxiv(paper["paper_url"]))
+        # Published landing pages may omit the preprint ID retained in the figure source.
+        arxiv_id = normalize_arxiv(paper["paper_url"]) or normalize_arxiv(
+            paper.get("figure", {}).get("source_pdf_url", "")
+        )
+        listed = Candidate(
+            title=paper["title"], paper_url=paper["paper_url"],
+            doi=paper.get("doi", ""), arxiv_id=arxiv_id,
+        )
         if same_paper(candidate, listed):
             return True
     return False
