@@ -237,7 +237,7 @@
     "venue": "NeurIPS 2025",
     "method": "4KAgent",
     "title": "4KAgent: Agentic Any Image to 4K Super-Resolution",
-    "paper_url": "https://arxiv.org/abs/2507.07105",
+    "paper_url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/f0075fe4e59652cf43148dcfab8d3c93-Abstract-Conference.html",
     "code_url": "https://github.com/taco-group/4KAgent",
     "project_url": "https://4kagent.github.io",
     "figure": {
