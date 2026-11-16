@@ -1,1 +1,235 @@
-[]
+[
+  {
+    "title": "Agentic Image Restoration Links Closed-Loop Controllers with Protocol-Aware Evaluation",
+    "paper_url": "https://doi.org/10.20944/preprints202609.1256.v1",
+    "published": "2026-09-15",
+    "authors": [
+      "Yuezhe Yang",
+      "Chengru Li",
+      "Zhuodong Chai",
+      "Xingbo Dong",
+      "Zhe Jin"
+    ],
+    "abstract": "Image restoration is shifting from fixed inference pipelines towards systems that diagnose degradation, choose tools, assess intermediate results, and revise their actions. However, the term “agentic” currently spans architectures with different control mechanisms and evaluation assumptions. We review representative studies published from 2018 to 2026 and offer a controller-centred synthesis of agentic image restoration (AIR). Our perspective separates four functional components, perception, decision, action, and reflection or memory, from five controller families: reinforcement learning, prompt conditioning, multimodal large language model tool use, memory-augmented planning, and multi-agent coordination. Evidence from photography, autonomous driving, medical reconstruction, remote sensing, and microscopy shows that controller comparisons are often confounded by incompatible degradations, tool pools, feedback signals, and budgets. We therefore pair the taxonomy with protocol-aware reporting priorities for output quality, downstream utility, execution cost, failure recovery, and provenance. This framework clarifies the boundary between conditioned restoration and autonomous control, identifies unresolved evaluation gaps, and provides a practical map for developing reliable and auditable AIR systems.",
+    "venue": "",
+    "doi": "10.20944/preprints202609.1256.v1",
+    "arxiv_id": "",
+    "sources": [
+      "Crossref"
+    ],
+    "score": 13,
+    "reasons": [
+      "image-restoration evidence",
+      "agentic planning, tool-use, learning, or memory evidence",
+      "multimodal/language-model evidence"
+    ],
+    "suggested_section": "Domain-Specific Restoration Agents",
+    "status": "needs-review"
+  },
+  {
+    "title": "Agentic Image Processing: A Systematic Review of Closed-Loop Image Transformation Systems",
+    "paper_url": "https://doi.org/10.20944/preprints202611.0839.v1",
+    "published": "2026-11-09",
+    "authors": [
+      "Shangquan Sun"
+    ],
+    "abstract": "Image restoration, enhancement, editing, and controllable generation are increasingly performed by systems in which a controller diagnoses the image, decomposes the request, selects and configures tools, inspects intermediate results, and revises or stops. The word agent is applied to systems with very different degrees of runtime control, and the literature is spread across communities. This review defines agentic image processing by behavior: an identifiable controller uses observations of the input or of an intermediate image to choose later processing actions. We systematically search the literature and analyze representative systems in terms of task, controller, observation, action, feedback, memory, organization, training, and autonomy. We propose a four-axis taxonomy and an A0–A4 autonomy scale, describe a common perceive plan–act–verify–remember architecture, and compare restoration, retouching, editing, closed loop generation, workflow composition, and applications. Three quarters of these systems appeared in 2025 or 2026, driven by multimodal large language models that perceive images, plan, and call tools. Controllers are moving toward reinforcement learning, and nearly all systems rely on learned judges whose errors propagate through the loop. We introduce a six layer evaluation framework covering image quality, goal satisfaction, decisions, trajectories, efficiency, and human-centered reliability, a reporting checklist, design guidelines, and open problems.",
+    "venue": "Preprints.org",
+    "doi": "10.20944/preprints202611.0839.v1",
+    "arxiv_id": "",
+    "sources": [
+      "Crossref",
+      "OpenAlex"
+    ],
+    "score": 11,
+    "reasons": [
+      "image-restoration evidence",
+      "agentic planning, tool-use, learning, or memory evidence",
+      "multimodal/language-model evidence"
+    ],
+    "suggested_section": "General-Purpose Image Restoration Agents",
+    "status": "needs-review"
+  },
+  {
+    "title": "Hierarchical Reinforcement Learning-Based Adaptive Denoising and Reversible Color Restoration Method for Complex Degraded Murals",
+    "paper_url": "https://doi.org/10.21203/rs.3.rs-10694208/v1",
+    "published": "2026-09-01",
+    "authors": [
+      "Minjie Xu"
+    ],
+    "abstract": "Abstract To address the coexistence of noise, cracks, fading, stains, texture weakening, and spatially heterogeneous degradation in complex mural images, this paper proposes a hierarchical reinforcement learning-based adaptive denoising and reversible color restoration method. The proposed framework decomposes mural restoration into two coordinated decision levels: a high-level policy selects the target region and restoration priority, while a low-level policy adaptively determines denoising, color mapping, and detail-preserving operations. A reversible feature constraint is further introduced to control color transformation and reduce the risk of irreversible chromatic deviation. Experiments were conducted using more than 80,000 WikiArt images for artistic-feature pretraining, 9,000 augmented faded mural images, 2,400 synthetically degraded samples, and 1,800 cross-domain evaluation images. The proposed HRL-RRN achieved 22.636 dB PSNR and 0.8628 SSIM, with a PSNR gain of 9.658 dB over the degraded input. Compared with the strongest non-hierarchical reversible baseline, the proposed method improved PSNR by 1.626 dB and SSIM by 0.0979, while reducing the mean color error from 9.376 to 6.487. These results demonstrate that the method can effectively balance noise suppression, structural fidelity, conservative color recovery, and controllable digital restoration.",
+    "venue": "",
+    "doi": "10.21203/rs.3.rs-10694208/v1",
+    "arxiv_id": "",
+    "sources": [
+      "Crossref"
+    ],
+    "score": 11,
+    "reasons": [
+      "image-restoration evidence",
+      "agentic planning, tool-use, learning, or memory evidence"
+    ],
+    "suggested_section": "General-Purpose Image Restoration Agents",
+    "status": "needs-review"
+  },
+  {
+    "title": "Look Before You Restore: Learning to Predict Before Acting for Agentic Image Restoration",
+    "paper_url": "https://arxiv.org/abs/2610.20384",
+    "published": "2026-10-14",
+    "authors": [
+      "Xu Zhang",
+      "Jun Wan",
+      "Lefei Zhang",
+      "Liangpei Zhang"
+    ],
+    "abstract": "Agents for mixed-degradation image restoration typically learn what a tool does to an image only after running it: failed calls waste computation and harmful outputs go unnoticed until too late. We propose PreActIR, an agentic restoration framework that predicts tool consequences before execution. For each candidate tool, a tool-conditioned world model forecasts changes in residual degradation, image quality, and fidelity, together with the risk of harm and the uncertainty of the prediction. The agent executes the top-ranked candidate, and an independent verifier commits or rolls back its output before the agent replans from the observed state. PreActIR also audits whether performance is limited by the selector or by the candidate space, and studies targeted tool adaptation as a controlled way to expand that space. In a controlled evaluation that fixes the candidate pool, verifier, and budget and employs reference-annotated degradation states, PreActIR uses 42.5% fewer real tool calls and 63.4% fewer rejected calls than reactive, execute-then-evaluate trial and error, while improving Y-PSNR by 0.92 dB.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2610.20384",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 11,
+    "reasons": [
+      "image-restoration evidence",
+      "agentic planning, tool-use, learning, or memory evidence"
+    ],
+    "suggested_section": "General-Purpose Image Restoration Agents",
+    "status": "needs-review"
+  },
+  {
+    "title": "REPAIR: Validity-guided agentic planning for image restoration under extreme compound degradations",
+    "paper_url": "https://doi.org/10.1016/j.patcog.2026.115189",
+    "published": "2027-04",
+    "authors": [
+      "Zhengnan Yin",
+      "Yiwei Zheng",
+      "Luwei Xiao",
+      "Yiwei Chen",
+      "Junkang Zhang",
+      "Xin Li",
+      "Tiesunlong Shen",
+      "Norah Saleh Alghamdi",
+      "Erik Cambria"
+    ],
+    "abstract": "",
+    "venue": "Pattern Recognition",
+    "doi": "10.1016/j.patcog.2026.115189",
+    "arxiv_id": "",
+    "sources": [
+      "Crossref"
+    ],
+    "score": 11,
+    "reasons": [
+      "image-restoration evidence",
+      "agentic planning, tool-use, learning, or memory evidence"
+    ],
+    "suggested_section": "General-Purpose Image Restoration Agents",
+    "status": "needs-review"
+  },
+  {
+    "title": "Dynamic Masked Mixture-of-Experts with Sparse-Constrained Reinforcement Learning for Video Temporal Grounding",
+    "paper_url": "https://doi.org/10.1145/3767308.3836160",
+    "published": "2026-11-09",
+    "authors": [
+      "Yeyu Chai",
+      "Wei Hong Han",
+      "Haoyu Zhuang",
+      "Rui Qi Zhao",
+      "Weiwei Li",
+      "Xiaopeng Fan B"
+    ],
+    "abstract": "Video Temporal Grounding (VTG) has become a critical challenge due to the rapid growth of video content on digital platforms. Traditional methods face difficulties in adapting to token contextualization and implementing stable masking strategies. To address these challenges, we propose a novel Dynamic Masked Mixture-of-Experts with Sparse-Constrained Reinforcement Learning (DSMoE) framework for video temporal grounding. Specifically, the Context-aware Semantic Attention Fusion (CASF) module dynamically adjusts dummy tokens in cross-attention to suppress irrelevant text–video interactions. The Multi-view Expert Semantic Extraction (MESE) module employs a mixture-of-experts architecture to capture complementary semantic and structural information. The Gate Control Denoising Decoder (GCDD) module further filters noisy activations through gated hidden-layer sparsification. Moreover, the Adaptive Token Fusion Policy Optimizer (FPO) learns the dummy-token sampling policy using reinforcement learning with an L1 constraint, improving both policy sparsity and training stability. Extensive experiments demonstrate that DSMoE consistently outperforms SOTA methods in video temporal grounding and highlight detection, validating its effectiveness and robustness.",
+    "venue": "ACM International Conference on Multimedia (ACM MM)",
+    "doi": "10.1145/3767308.3836160",
+    "arxiv_id": "",
+    "sources": [
+      "OpenAlex"
+    ],
+    "score": 9,
+    "reasons": [
+      "image-restoration evidence",
+      "agentic planning, tool-use, learning, or memory evidence"
+    ],
+    "suggested_section": "General-Purpose Image Restoration Agents",
+    "status": "needs-review"
+  },
+  {
+    "title": "HarnessIR: Harnessing Multimodal Foundation Models for Universal Real-World Image Restoration",
+    "paper_url": "https://arxiv.org/abs/2610.10133",
+    "published": "2026-10-07",
+    "authors": [
+      "Xiangtao Kong",
+      "Shuaizheng Liu",
+      "Rongyuan Wu",
+      "Lingchen Sun",
+      "Zhengqiang Zhang",
+      "Jixin Zhao",
+      "Yuhui Wu",
+      "Lei Zhang"
+    ],
+    "abstract": "Real-world low-quality images suffer from complex mixed degradations, including but not limited to noise, blur, atmospheric effects, etc. Recent agentic methods usually model real-world image restoration (Real-IR) as a sequential tool calling problem over task-specific single-degradation restoration models. This paradigm, however, is fundamentally limited because complex real-world degradations cannot be cleanly undone degradation by degradation, and the tool used for task-specific models caps the capability of the agent system. In this work, we present HarnessIR, an agentic framework for Real-IR by harnessing a multimodal foundation model (MFM) as the executor. HarnessIR consists of five stages: perception and diagnosis, on-demand tool invocation, prompt composition, execution, and verification-driven refinement. Unlike prior agentic Real-IR methods that rely on tool chains assembled from task-specific models, HarnessIR feeds the restoration requirements, the perceptual diagnosis, and the evidence into an MFM that performs restoration in a single pass, followed by verification stages to determine whether the result warrants further processing. Under our harness, off-the-shelf MFMs handle restoration tasks remarkably well, achieving state-of-the-art results on the widely used MiO100 synthetic benchmark. More importantly, by exploiting the strong generalization ability of MFMs, HarnessIR delivers compelling restoration quality on challenging real-world scenes where previous agentic IR systems often struggle. Codes is available at https://github.com/PolyU-VCLab/HarnessIR.",
+    "venue": "arXiv (Cornell University)",
+    "doi": "10.48550/arxiv.2610.10133",
+    "arxiv_id": "2610.10133",
+    "sources": [
+      "OpenAlex",
+      "arXiv"
+    ],
+    "score": 9,
+    "reasons": [
+      "image-restoration evidence",
+      "agentic planning, tool-use, learning, or memory evidence"
+    ],
+    "suggested_section": "General-Purpose Image Restoration Agents",
+    "status": "needs-review"
+  },
+  {
+    "title": "RAPIDMap: Rapid Multi-Agent Pipeline for Interpretable Disaster Mapping from Satellite and Street-view Imagery",
+    "paper_url": "https://arxiv.org/abs/2609.00046",
+    "published": "2026-08-30",
+    "authors": [
+      "Yifan Yang",
+      "Lei Zou"
+    ],
+    "abstract": "Rapid and reliable disaster mapping of impacted areas, damaged infrastructure, and affected populations is essential for emergency response and recovery. However, existing AI-based approaches often require extensive manual annotation, lack cross-hazard generalization, and rely on single-modal observations. To address these challenges, this paper proposes RAPIDMap, a rapid multi-agent pipeline for zero-shot interpretable disaster mapping from satellite and street-view imagery. The framework integrates four intelligent agents: Disaster Perception Agent (DPA), Image Restoration Agent (IRA), Damage Recognition Agent (DRA), and Disaster Mapping Agent (DMA). By combining remote sensing and street-view data, RAPIDMap eliminates the need for manual fine-tuning, generalizes across multiple disaster categories, and generates structured, map-ready disaster intelligence with recovery recommendations.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2609.00046",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 9,
+    "reasons": [
+      "image-restoration evidence",
+      "agentic planning, tool-use, learning, or memory evidence"
+    ],
+    "suggested_section": "General-Purpose Image Restoration Agents",
+    "status": "needs-review"
+  },
+  {
+    "title": "RecurIR: Learning When and How to Revise Restoration Policies via Recursive Self-Improvement",
+    "paper_url": "https://arxiv.org/abs/2611.18006",
+    "published": "2026-11-13",
+    "authors": [
+      "Hu Gao",
+      "Haoran Zhang",
+      "Yulong Chen",
+      "Lizhuang Ma"
+    ],
+    "abstract": "Agent-based image restoration has achieved promising performance by coordinating restoration tools to handle heterogeneous and coupled degradations. However, existing agents often improve their decisions through accumulated successful and failed executions, without explicitly identifying the conditions under which learned restoration strategies remain effective. Consequently, changes in degradation severity, spatial coverage, or interactions may invalidate previous decisions, while providing limited guidance on how these decisions should be revised. In this paper, we propose \\textbf{RecurIR}, a recursive self-improvement framework that enables restoration agents to learn when and how to revise their decision rules. Specifically, we introduce a policy-hypothesis discovery mechanism to identify testable, condition-dependent rules through matched tool executions. We then design a rule-falsification-driven task evolution mechanism to generate targeted degradation variations, examine the validity of learned rules, and identify their applicability boundaries. Based on the resulting evidence, we develop a change-conditioned policy revision mechanism that learns how variations in degradation conditions should modify tool selection, execution order, operation strength, and processing regions. We further incorporate independent verification to retain effective revisions and use the resulting feedback to guide subsequent hypothesis discovery and task evolution. Through this recursive process, RecurIR progressively refines its restoration policies as degradation conditions change. Extensive experiments demonstrate the effectiveness of the proposed framework.",
+    "venue": "",
+    "doi": "",
+    "arxiv_id": "2611.18006",
+    "sources": [
+      "arXiv"
+    ],
+    "score": 7,
+    "reasons": [
+      "image-restoration evidence",
+      "agentic planning, tool-use, learning, or memory evidence"
+    ],
+    "suggested_section": "General-Purpose Image Restoration Agents",
+    "status": "needs-review"
+  }
+]
